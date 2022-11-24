@@ -64,7 +64,7 @@ numberItem += 1
 numberOfItems.innerHTML = numberItem
 
 itemQty.innerHTML = `<p>${numberItem}</p>`
-priceTotal()
+
 }
 
 // Function to add No. of Items
@@ -77,7 +77,7 @@ if(numberItem < 1){
 }
 
 itemQty.innerHTML = `<p>${numberItem}</p>`
-priceTotal()
+
 
 }
 
@@ -135,3 +135,22 @@ console.log(displayShoe)
       <button>Checkout</button>
     </div>
 */
+
+
+const menuBar = document.querySelector('.menu')
+const displayMenu = document.querySelector('.bgLinks')
+const displayMenuSec = document.querySelector('.toggleLinks')
+const closeMenu = document.querySelector('.close')
+
+
+menuBar.onclick = () => {
+  displayMenu.style.display ="flex"
+  displayMenuSec.style.width = "50%"
+  displayMenu.style.width = "100%"
+}
+
+closeMenu.onclick = () => {
+  displayMenu.style.display = 'none'
+  displayMenuSec.style.width = "0"
+  displayMenu.style.width = "0"
+}
